@@ -1,0 +1,9 @@
+{
+	"name": "Rc3101-DF",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "04e87e0e-a249-458b-9ba2-b376104839b3",
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+	}
+}
