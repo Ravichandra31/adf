@@ -1,0 +1,74 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "object_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "version",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "source_object_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "capture_instance",
+				"type": "nvarchar"
+			},
+			{
+				"name": "start_lsn",
+				"type": "binary"
+			},
+			{
+				"name": "end_lsn",
+				"type": "binary"
+			},
+			{
+				"name": "supports_net_changes",
+				"type": "bit"
+			},
+			{
+				"name": "has_drop_pending",
+				"type": "bit"
+			},
+			{
+				"name": "role_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "index_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "filegroup_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "create_date",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "partition_switch",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "cdc",
+			"table": "change_tables"
+		}
+	}
+}
